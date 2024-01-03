@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/program-form">Back</a></li>
+                <li class="breadcrumb-item active" aria-current="page">update Programe</li>
+            </ol>
+        </nav>
+    </div>
+    <form action="/update-programe" method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="program_id">programe Id</label>
+                    <input type="text" id="program_id" name="program_id" class="form-control">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="program_name">programe Name</label>
+                    <input type="text" id="program_name" name="program_name" class="form-control">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="program_type">programe type</label>
+                    <input type="text" id="program_type" name="program_type" class="form-control">
+                </div>
+            </div>
+            <div class="col-12">
+                <br>
+                <button type="submit" class="btn btn-primary col-12" style="margin-top: 25px;">Update Program</button>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>

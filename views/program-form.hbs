@@ -1,0 +1,26 @@
+
+<hr>
+<table class="table-bordered table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">programe Id</th>
+            <th scope="col">programe Name</th>
+            <th scope="col">programe type</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each rows}}
+        <tr>
+            <td scope="row">{{this.program_id}}</td>
+            <td>{{this.program_name}}</td>
+            <td>{{this.program_type}}</td>
+            <td>
+                <a href="/delete-program/{{this.program_id}}" class="btn btn-danger">Delete</a>&nbsp;
+                <a href="/update-program-form/{{this.program_id}}" class="btn btn-warning">Update</a>
+            </td>
+        </tr>
+        {{/each}}
+        
+    </tbody>
+</table>
+</hr>

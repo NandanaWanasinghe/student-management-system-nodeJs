@@ -1,0 +1,21 @@
+<hr>
+<table class="table-bordered table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Registration Id</th>
+            <th scope="col">Student Id</th>
+            <th scope="col">Program Id</th>
+            <th scope="col">Registration Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each rows}}
+        <tr>
+            <td scope="row">{{this.registration_id}}</td>
+            <td>{{this.student_id}}</td>
+            <td>{{this.program_id}}</td>
+            <td>{{this.registration_date}}</td>
+        {{/each}}
+    </tbody>
+</table>
+</hr>

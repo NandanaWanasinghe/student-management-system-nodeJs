@@ -1,0 +1,30 @@
+<hr>
+<table class="table-bordered table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Student Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Birth Day</th>
+            <th scope="col">Email</th>
+            <th scope="col">Nic</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each rows}}
+        <tr>
+            <td scope="row">{{this.student_id}}</td>
+            <td>{{this.first_name}}</td>
+            <td>{{this.last_name}}</td>
+            <td>{{this.date_of_birth}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.nic}}</td>
+            <td>
+                <a href="/delete-student/{{this.student_id}}" class="btn btn-danger">Delete</a>&nbsp;
+                <a href="/update-student-form/{{this.student_id}}" class="btn btn-warning">Update</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+</hr>

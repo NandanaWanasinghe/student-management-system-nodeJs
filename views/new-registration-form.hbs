@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/registration-info">Back</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Registration</li>
+            </ol>
+        </nav>
+    </div>
+    <form action="/create-registration" method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="student_id">Student Id</label>
+                    <input type="text" id="student_id" name="student_id" class="form-control">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="program_id">Program Id</label>
+                    <input type="text" id="program_id" name="program_id" class="form-control">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="registration_date">Registration Date</label>
+                    <input type="date" id="registration_date" name="registration_date" class="form-control">
+                </div>
+            </div>
+            <div class="col-12">
+                <br>
+                <button type="submit" class="btn btn-primary col-12" style="margin-top: 25px;">Save Registration</button>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
